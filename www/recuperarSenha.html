@@ -12,10 +12,11 @@
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() {
             console.log("PhoneGap is ready");
+        
         }
     </script>
     
-    <title>Login</title>
+    <title>Recuperar Senha</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -45,22 +46,16 @@
 <div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-50 p-b-90">
-				<form action="login.php" method="POST" class="login100-form validate-form flex-sb flex-w">
+				<form action="recuperarSenha.php" method="POST" class="login100-form validate-form flex-sb flex-w">
 					<span class="login100-form-title p-b-51">
-						Login
+						Recuperar senha
 					</span>
 
-					
-					<div class="wrap-input100 validate-input m-b-16" data-validate = "Necessário nome de usuario">
-						<input class="input100" type="text" name="nome_email" placeholder="Nome/Email" id="nome">
+          <div class="wrap-input100 validate-input m-b-16" data-validate = "Necessário email do usuario">
+						<input class="input100" type="text" name="email" placeholder="Email" id="nome">
 						<span class="focus-input100"></span>
 					</div>
 					
-					
-					<div class="wrap-input100 validate-input m-b-16" data-validate = "Necessário senha">
-						<input class="input100" type="password" name="senha" placeholder="Senha" id="senha">
-						<span class="focus-input100"></span>
-					</div>
 					
 					<div class="flex-sb-m w-full p-t-3 p-b-24">
 						<div class="contact100-form-checkbox">
@@ -68,17 +63,18 @@
 					</div>
 					<div class="container-login100-form-btn m-t-17">
 						
-						<input class="login100-form-btn" type="submit" value="Logar" onclick="Verificador">
+						<input class="login100-form-btn" type="submit" value="Confirmar" onclick="Verificador">
 							
 						
 					</div>
           
 
-           <!-- LINK DE TESTE-->
-     <a href="cadastroLivro.html" id="ca">CADASTROLIVRO</a>
-      <!-- LINK DE TESTE-->
+          
 
 				</form>
+        <div class="container-login100-form-btn m-t-50">
+        <button class="login100-form-btn" onclick="javascript: location.href='index.html'"">Cancelar</button>
+        </div>
 			</div>
 		</div>
 	</div>
@@ -104,28 +100,13 @@
 	<script src="js/main.js"></script>
 
     <!--<a class="button--large" href="phonegap-demo.html">Start Demo</a>-->
-  
+   
 </body>
 <footer><!-- informações complementares, que são apresentados na parte inferior da tela-->
-      
-      <table border="1" >
-    <tr>
-        <td colspan="6">
-          <a href="cadastro.html" id="ca">Cadastre-se agora!</a>
-          </td>
-        <td colspan="6">
-          <a href="recuperarSenha.html" id="ems">Esqueci minha senha.</a>
-        </td>
-        
-    </tr>
-   
-</table>
-
-
 
        
          
-    </footer>
+</footer>
     
 
 </html>
