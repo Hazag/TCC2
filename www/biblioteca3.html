@@ -14,28 +14,25 @@
         function onDeviceReady() {
             console.log("PhoneGap is ready");
 	</script>
-
-  <script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+<style>
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
 }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
+th, td {
+    text-align: left;
+    padding: 8px;
 }
-</script>
 
-	<title>Biblioteca</title>
+tr:nth-child(even){background-color: #f2f2f2}
+</style>
+  
+<span class="login100-form-title p-b-51">
+						Biblioteca
+					</span>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,59 +62,33 @@ function showDivs(n) {
 
 </head>
 
-<body id="telaroxa">
+<body id="telaGrecia">
+    <form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
+<div class="wrap-input100 validate-input m-b-20" data-validate="Necessário nome de usuario">
+    					<input class="input102" type="text" name="" placeholder="Pesquisa" id="nome">
+						<input class="login101-form-btn" type="submit" value="Pesquisar" onclick="Verificador">
 
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100 p-t-50 p-b-90">
-
-				<span class="login100-form-title p-b-51">
-						Biblioteca
-					</span>
-
-
-				<div class="wrap-input100 validate-input m-b-16" data-validate="Necessário nome de usuario">
-					<input class="input102" type="text" name="" placeholder="Pesquisa" id="nome">
-					<input class="login101-form-btn" type="submit" value="Pesquisar" onclick="Verificador">
-
-					<span class="focus-input100"></span>
-				</div>
-
-
-
-				<div class="flex-sb-m w-full p-t-3 p-b-24">
-					
-				</div>
-				<div class="container-login100-form-btn">
-          <!--https://www.w3schools.com/w3css/w3css_slideshow.asp-->
-
-
-					<div class="w3-content w3-display-container">
-						<center><img class="mySlides" src="images/imagesTeste.jpg" style="width:50%"></center>
-            
-						<center><img class="mySlides" src="images/imagesTeste2.jpg" style="width:50%"></center>
-
-						<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-						<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+						<span class="focus-input100"></span>
 					</div>
-
-
-
-
-				<!--</div>-->
-
-
-
-
-				<div class="container-login100-form-btn m-t-50">
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div id="dropDownSelect1"></div>
+    </form>                
+    
+<table>
+    
+   <tr>
+     <div >
+  <p><img src="images/imagesTeste.jpg" id="tl1" width="100"
+    height="150">
+  <font id="tl1"><p>Título:</font> <br><font id="tl">A espada do destino</font>
+</div>
+   </tr>
+   <tr>    
+     <div >
+  <p><img src="images/imagesTeste.jpg" id="tl1" width="100"
+    height="150" >
+  <font id="tl1"><p>Título:</font> <br><font id="tl">A espada do destino</font>
+</div>
+   </tr>  
+</table>
 
 	<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -141,7 +112,8 @@ function showDivs(n) {
 </body>
 <footer>
 	<!-- informações complementares, que são apresentados na parte inferior da tela-->
-
+  
+  
 
 
 </footer>
