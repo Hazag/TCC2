@@ -104,10 +104,10 @@ body {
 }
 
 section {
-  border-bottom: 1px solid #999;
+  border-bottom: 0px solid #999;
   text-align: center;
-  padding: 100px 0 0;
-  height: 800px;
+  padding: 1px 0 0;
+  height: 100%;
   width: 100%;
 }
 
@@ -126,7 +126,7 @@ p {
 --------------------------------------------- */
 
 header {
-  background: #f4421a;
+  background: #291af4;
   position: fixed;
   z-index: 3;
   width: 100%;
@@ -229,7 +229,7 @@ header {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   border-top: 1px solid white;
   text-decoration: none;
-  background: #f4421a;
+  background: #291af4;
   padding: 0.7em 1em;
   color: #fff;
   width: 100%;
@@ -238,7 +238,7 @@ header {
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background: #b73214;
+  background: #1e14b1;
 }
 
 @media screen and (min-width: 40em) {

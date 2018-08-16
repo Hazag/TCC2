@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
 	<script src="components/loader.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/responsive-nav.js"></script>
 	<link rel="stylesheet" href="components/loader.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script>
@@ -14,28 +16,11 @@
         function onDeviceReady() {
             console.log("PhoneGap is ready");
 	</script>
-	<style>
-		table {
-			font-family: arial, sans-serif;
-			border-collapse: collapse;
-			width: 100%;
-		}
-
-		td,
-		th {
-			border: 1px solid #dddddd;
-			text-align: left;
-			padding: 8px;
-		}
-
-		tr:nth-child(even) {
-			background-color: #dddddd;
-		}
-	</style>
-
-	<span class="login100-form-title p-b-51">
-						Biblioteca
+  <span class="login100-form-title p-b-51">
+						Livros em andamento
 					</span>
+
+
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,31 +51,114 @@
 </head>
 
 <body id="telaGrecia">
-	<form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
+  <header>
+      <a href="#home" class="logo" data-scroll>Livros em andamento</a>
+      <nav class="nav-collapse">
+        <ul>
+          <li class="menu-item active"><a href="biblioteca.html" data-scroll>Livros em andamento</a></li>
+          <li class="menu-item"><a href="livrosConcluidos.html" data-scroll>Livros concluídos</a></li>
+          <li class="menu-item"><a href="cadastroLivro.html" data-scroll>Cadastrar livros</a></li>
+          <li class="menu-item"><a href="#blog" data-scroll>Ajuda</a></li>
+          <li class="menu-item"><a href="http://www.google.com" target="_blank">Sobre nós</a></li>
+          <li class="menu-item"><a href="index.html" data-scroll>Deslogar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
 		<div class="wrap-input100 validate-input m-b-20" data-validate="Necessário nome de usuario">
 			<input class="input102" type="text" name="" placeholder="Pesquisa" id="nome">
 			<input class="login101-form-btn" type="submit" value="Pesquisar" onclick="Verificador">
 
 			<span class="focus-input100"></span>
 		</div>
+    
 	</form>
-
-	<table>
+  <a href="cadastroLivro.html"><button class="login100-form-btn">Cadastrar Livro</button></a>
+	<table id="lar100">
 		<tr>
 			<td>
 				<!--ADICIONAR-->
-				<img src="images/imagesTeste.jpg" style="width:100px">
-
+				<a href="infoLivro.html"><img  src="images/imagesTeste.jpg" style="width:100px"></a>
+        <a href="infoLivro.html"><button class="login102-form-btn">Notas</button></a>
 			</td>
 			<td>
 
-				<font color="#6495ED" id="tl"><b>Título:</b><br> A espada do destino<br><b>Altor:</b><br> Andrzej Sapkowski<br><b>Páginas:</b><br> 380</font>
+				<font color="#6495ED" id="tl"><b>Título:</b><br> A espada do destino<br><b>Meta:</b> 22 p/dia<br><b>Progresso:</b></font>
+      
+
+<!-- Maneira com CSS e HTML -->
+
+<div class="progress">
+    <div class="status" style="width: 30%">30%</status>
+    
+  </div>
+  </td>
+  
+  
+
+		</tr>
+
+	</table>
+  <!-- EXEMPLO -->
+  <table id="lar100">
+		<tr>
+			<td>
+				<!--ADICIONAR-->
+				<a href="infoLivro.html"><img src="images/imagesTeste.jpg" style="width:100px"></a>
+        <a href="infoLivro.html"><button class="login102-form-btn">Notas</button></a>
 			</td>
+			<td>
+
+				<font color="#6495ED" id="tl"><b>Título:</b><br> A espada do destino<br><b>Meta:</b> 22 p/dia<br><b>Progresso:</b></font>
+			<a href="index.html"><button class="login102-form-btn">Atualizar</button></a>
+
+<!-- Maneira com CSS e HTML -->
+
+<div class="progress">
+    <div class="status" style="width: 60%">60%</status>
+    
+  </div>
+  </td>
 
 
 		</tr>
 
 	</table>
+
+
+  <table id="lar100">
+		<tr>
+			<td>
+				<!--ADICIONAR-->
+				<a href="infoLivro.html"><img src="images/imagesTeste.jpg" style="width:100px"></a>
+        <a href="infoLivro.html"><button class="login102-form-btn">Notas</button></a>
+			</td>
+			<td>
+
+				<font color="#6495ED" id="tl"><b>Título:</b><br> A espada do destino<br><b>Meta:</b> 22 p/dia<br><b>Progresso:</b></font>
+			<a href="index.html"><button class="login102-form-btn">Atualizar</button></a>
+
+<!-- Maneira com CSS e HTML -->
+
+<div class="progress">
+    <div class="status" style="width: 94%">94%</status>
+  </div></td>
+
+
+		</tr>
+
+	</table>
+  <!-- EXEMPLO -->
+      
+    </section>
+
+
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+	
 
 	<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>

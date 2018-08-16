@@ -6,22 +6,16 @@
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
 	<script src="components/loader.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/responsive-nav.js"></script>
 	<link rel="stylesheet" href="components/loader.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script>
-		// PhoneGap event handler
-        document.addEventListener("deviceready", onDeviceReady, false);
-        function onDeviceReady() {
-            console.log("PhoneGap is ready");
 
-            function funcao_a() {
-  href="index.html"
-}
+	
 
-        }
-	</script>
-
-	<title>Login</title>
+	<span class="login100-form-title p-b-51">
+						Biblioteca
+					</span>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,19 +40,39 @@
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+
 	<!--===============================================================================================-->
 
 </head>
 
-<body id="telaroxa">
+<body id="telaGrecia">
+  <header>
+      <a href="#home" class="logo" data-scroll>Cadastrar Livro</a>
+      <nav class="nav-collapse">
+        <ul>
+          <li class="menu-item active"><a href="biblioteca.html" data-scroll>Livros em andamento</a></li>
+          <li class="menu-item"><a href="livrosConcluidos.html" data-scroll>Livros concluídos</a></li>
+          <li class="menu-item"><a href="cadastroLivro.html" data-scroll>Cadastrar livros</a></li>
+          <li class="menu-item"><a href="#blog" data-scroll>Ajuda</a></li>
+          <li class="menu-item"><a href="http://www.google.com" target="_blank">Sobre nós</a></li>
+          <li class="menu-item"><a href="index.html" data-scroll>Deslogar</a></li>
+        </ul>
+      </nav>
+    </header>
 
-	<div class="limiter">
+    
+    
+
+			<span class="focus-input100"></span>
+		</div>
+    
+	</form>
+  
+    <div class="limiter">
 		<div class="container-login100">
-			<div class="wrap-login100 p-t-50 p-b-90">
+			<div class="wrap-login100 p-b-90">
 				<form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
-					<span class="login100-form-title p-b-51">
-						Cadastro
-					</span>
+					
 
           
           <div class="wrap-input100 m-b-30" >
@@ -96,23 +110,87 @@
 
 					
 
-          <div class="wrap-input100 m-b-16">
+          <div class="wrap-input100 m-b-26">
 						<input class="input100" type="text" name="editor" placeholder="Editor(a)" id="nome">
+						<span class="focus-input100"></span>
+					</div> 
+
+          <div  m-b-26">
+						<font color="#fff" id="negrito">Definir metas através de:</font>
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="flex-sb-m w-full p-t-3 p-b-24">
-						<div class="contact100-form-checkbox">
-						</div>
+<font color="#6495ED" id="negrito">
+          <label id="checkboxM">&nbsp;&nbsp;&nbsp;Nº de páginas
+  <input type="checkbox"  >
+  <span class="checkmark"></span>
+</label>
+<label id="checkboxM">&nbsp;&nbsp;&nbsp;Nº de capítulos
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+</label>
+<label id="checkboxM">&nbsp;&nbsp;&nbsp;Marcar como concluído
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+</label>
+
+
+</font>
+
+
+          <div  m-b-26">
+						<font color="#fff" id="negrito">Dias da semana de estudo:</font>
+						<span class="focus-input100"></span>
 					</div>
-					<div class="container-login100-form-btn m-t-17">
+
+<font color="#6495ED" id="negrito">
+          <label id="checkboxS">&nbsp;&nbsp;&nbsp;S
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+</label>
+<label id="checkboxS">&nbsp;&nbsp;&nbsp;T
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+</label>
+<label id="checkboxS">&nbsp;&nbsp;&nbsp;Q
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label id="checkboxS">&nbsp;&nbsp;&nbsp;Q
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label id="checkboxS">&nbsp;&nbsp;&nbsp;S
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label id="checkboxS">&nbsp;&nbsp;&nbsp;S
+  <input type="checkbox"  >
+  <span class="checkmark"></span>
+</label>
+<label id="checkboxS">&nbsp;&nbsp;&nbsp;D
+  <input type="checkbox" >
+  <span class="checkmark"></span>
+</label>
+</font>
+
+<font color="#fff" id="negritoDI" >Data de inicio:</font>
+						<input type="date" id="negritoDI">
+            <br>
+            <font color="#fff" id="negritoDI">Data de termino:</font>
+						<input type="date" id="negritoDI">
+					</div>
+        
+
+			
 
 						<input class="login100-form-btn" type="submit" value="Cadastrar" onclick="Verificador">
 
 
 
-					</div>
-
+					
+          <div  m-b-26">
+						
 
 				</form>
 
@@ -123,6 +201,12 @@
 
 
 	<div id="dropDownSelect1"></div>
+
+
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+	
 
 	<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -146,6 +230,7 @@
 </body>
 <footer>
 	<!-- informações complementares, que são apresentados na parte inferior da tela-->
+
 
 
 
