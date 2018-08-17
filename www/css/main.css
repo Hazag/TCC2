@@ -248,7 +248,7 @@ iframe {
 /*---------------------------------------------*/
 .input100 {
   font-family: Ubuntu-Bold;
-  color: #6495ED;
+  color: #00008B;
   line-height: 1.2;
   font-size: 18px;
 
@@ -272,7 +272,7 @@ iframe {
 }
 .input102 {
   font-family: Ubuntu-Bold;
-  color: #6495ED;
+  color: #00008B;
   line-height: 1.2;
   font-size: 18px;
 
@@ -280,6 +280,30 @@ iframe {
   width: 50%;
   background: transparent;
   height: 40px;
+  padding: 0 20px 0 38px;
+}
+.input103 {
+  font-family: Ubuntu-Bold;
+  color: #00008B;
+  line-height: 1.2;
+  font-size: 18px;
+
+  display: block;
+  width: 100%;
+  background: transparent;
+  height: 40px;
+  padding: 0 20px 0 38px;
+}
+.input104 {
+  font-family: Ubuntu-Bold;
+  color: #6495ED;
+  line-height: 1.2;
+  font-size: 18px;
+
+  display: block;
+  width: 100%;
+  background: transparent;
+  height: 50px;
   padding: 0 20px 0 38px;
 }
 /*------------------------------------------------------------------
@@ -558,7 +582,7 @@ iframe {
   background-color: #000000;
 }
 .login101-form-btn:hover {
-  background-color: #403866;
+  background-color: rgb(0, 0, 0);
 }
 
 

@@ -52,7 +52,7 @@
 
 <body id="telaPagina">
   <header>
-      <a href="#home" class="logo" data-scroll>Livros concluídos</a>
+      <a href="#home" class="logo" data-scroll>Informações do livro</a>
       <nav class="nav-collapse">
         <ul>
           <li class="menu-item active"><a href="biblioteca.html" data-scroll>Livros em andamento</a></li>
@@ -65,91 +65,47 @@
       </nav>
     </header>
 
-    <section id="home">
-      <form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
-		<div class="wrap-input100 validate-input m-b-20" data-validate="Necessário nome de usuario">
-			<input class="input102" type="text" name="" placeholder="Pesquisa" id="nome">
-			<input class="login101-form-btn" type="submit" value="Pesquisar" onclick="Verificador">
+    <section >
+      
 
 			<span class="focus-input100"></span>
 		</div>
     
 	</form>
-  <a href="cadastroLivro.html"><button class="login100-form-btn">Cadastrar Livro</button></a>
-	<table id="lar100">
+	<table>
 		<tr>
-			<td>
-				<!--ADICIONAR-->
-				<img src="images/temorSabio.jpg" style="width:100px;height:150px">
-        <a href="infoLivro.html"><button class="login104-form-btn">Notas</button></a>
-			</td>
-			<td style="width:100%">
-
-				<font color="#6495ED" id="tl"><b>Título:</b><br> O Temor do Sábio<br><b>Progresso:</b></font>
 			
-      
-
+				<!--ADICIONAR-->
+				<img src="images/espadaDestino.jpg" style="width:150px">
+        <a href="index.html"><button class="login103-form-btn">Notas</button></a>
+		</tr>
+    <tr>
+				<font color="#6495ED" id="tl"><b>Título:</b><br> A espada do destino<br><b>Páginas:</b><br> 380<br>Páginas lidas:</b><br> 114<br> <b>Progresso:</b></font>
+    
 <!-- Maneira com CSS e HTML -->
-
-<div class="progress">
-    <div class="status" style="width: 100%">Concluído</status>
+<div class="progress2">
+    <div class="statuss m-b-16" style="width: 30%">30%</status>
+    
   </div>
-  </td>
+  <form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
+		<div class="wrap-input100 validate-input m-b-20" data-validate="Necessário nome de usuario">
+			<input class="input103" type="text" name="" placeholder="Pagina atual" id="nome">
+			<input class="login101-form-btn" type="submit" value="Atualizar" onclick="Verificador">
 
-
-		</tr>
-
-	</table>
-  <!-- EXEMPLO -->
-  <table id="lar100">
-		<tr>
-			<td>
-				<!--ADICIONAR-->
-				<img src="images/ultimoDesejo.jpg" style="width:100px;height:150px">
-        <a href="infoLivro.html"><button class="login104-form-btn">Notas</button></a>
-			</td>
-			<td style="width:100%">
-
-				<font color="#6495ED" id="tl"><b>Título:</b><br> O Último Desejo<br><b>Progresso:</b></font>
-			
-
-<!-- Maneira com CSS e HTML -->
-
-<div class="progress">
-    <div class="status" style="width: 100%">Concluído</status>
-  </div></td>
-
-
-		</tr>
-
-	</table>
-
-
-  <table id="lar100">
-		<tr>
-			<td>
-				<!--ADICIONAR-->
-				<img src="images/batismoFogo.jpg" style="width:100px;height:150px">
-        <a href="infoLivro.html"><button class="login104-form-btn">Notas</button></a>
-			</td>
-			<td style="width:100%">
-
-				<font color="#6495ED" id="tl"><b>Título:</b><br> Batismo de Fogo<br><b>Progresso:</b></font>
-			
-
-<!-- Maneira com CSS e HTML -->
-
-<div class="progress">
-    <div class="status" style="width: 100%">Concluído</status>
-  </div></td>
-
-
-		</tr>
-
-	</table>
-  <!-- EXEMPLO -->
+			<span class="focus-input100"></span>
+		</div>
+    
+	</form>
+  
+  </tr>
+  <table >
+ 
+ 
       
-    </section>
+   
+
+    
+    
 
 
     <script src="js/fastclick.js"></script>
