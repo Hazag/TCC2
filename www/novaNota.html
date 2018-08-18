@@ -10,17 +10,75 @@
   <script src="js/responsive-nav.js"></script>
 	<link rel="stylesheet" href="components/loader.css">
 	<link rel="stylesheet" href="css/style.css">
+<!--===============================================================================================-->
+<script>
+
+</script>
+<!--===============================================================================================-->  
 	<script>
 		// PhoneGap event handler
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() {
             console.log("PhoneGap is ready");
 	</script>
-
-
-	<span class="login100-form-title p-b-51">
-					
+  <span class="login100-form-title p-b-51">
+						
 					</span>
+
+
+
+<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-b-90">
+				<form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
+					
+
+          
+          
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate="Necessário titulo do livro">
+						<input class="input105" type="text" name="titulo" placeholder="A Espada do Destino" id="nome" disabled>
+						<span class="focus-input100"></span>
+					</div>
+
+          <div class="wrap-input100 validate-input m-b-16" data-validate="Necessário informar numero da pagina">
+						<input class="input100" type="text" name="paginas" placeholder="Nota referente á página" id="nome">
+						<span class="focus-input100"></span>
+					</div>
+
+          <div class="wrap-input100 validate-input m-b-16" data-validate="Necessário informar numero do capitulo">
+						<input class="input100" type="text" name="paginas" placeholder="Nota referente ao capítulo" id="nome">
+						<span class="focus-input100"></span>
+					</div>
+
+          <div class="wrap-input100 m-b-16">
+						<input class="input100" type="text" name="tituloNota" placeholder="Título da nota" id="nome">
+						<span class="focus-input100"></span>
+					</div>
+
+          <div class="wrap-input100 m-b-16">
+            <textarea name="nota" cols="40" rows="5"  placeholder="Nota"  id="txtareaNota"></textarea>
+						<span class="focus-input100"></span>
+					</div>
+         
+
+
+						<input class="login100-form-btn" type="submit" value="Criar nota" onclick="Verificador">
+
+
+
+					
+          <div>
+						
+
+				</form>
+
+				
+			</div>
+		</div>
+	</div>
+
+
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +110,7 @@
 
 <body id="telaPagina">
   <header>
-      <a href="#home" class="logo" data-scroll>Livros concluídos</a>
+      <a href="#home" class="logo" data-scroll>Nova nota</a>
       <nav class="nav-collapse">
         <ul>
           <li class="menu-item active"><a href="biblioteca.html" data-scroll>Livros em andamento</a></li>
@@ -66,87 +124,9 @@
     </header>
 
     <section id="home">
-      <form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
-		<div class="wrap-input100 validate-input m-b-20" data-validate="Necessário nome de usuario">
-			<input class="input102" type="text" name="" placeholder="Pesquisa" id="nome">
-			<input class="login101-form-btn" type="submit" value="Pesquisar" onclick="Verificador">
-
-			<span class="focus-input100"></span>
-		</div>
     
-	</form>
-  <a href="cadastroLivro.html"><button class="login100-form-btn">Cadastrar Livro</button></a>
-	<table id="lar100">
-		<tr>
-			<td>
-				<!--ADICIONAR-->
-				<img src="images/temorSabio.jpg" style="width:100px;height:150px">
-        <a href="notasLivro.html"><button class="login104-form-btn">Notas</button></a>
-			</td>
-			<td style="width:100%">
-
-				<font color="#6495ED" id="tl"><b>Título:</b><br> O Temor do Sábio<br><b>Progresso:</b></font>
-			
-      
-
-<!-- Maneira com CSS e HTML -->
-
-<div class="progress">
-    <div class="status" style="width: 100%">Concluído</status>
-  </div>
-  </td>
-
-
-		</tr>
-
-	</table>
-  <!-- EXEMPLO -->
-  <table id="lar100">
-		<tr>
-			<td>
-				<!--ADICIONAR-->
-				<img src="images/ultimoDesejo.jpg" style="width:100px;height:150px">
-        <a href="notasLivro.html"><button class="login104-form-btn">Notas</button></a>
-			</td>
-			<td style="width:100%">
-
-				<font color="#6495ED" id="tl"><b>Título:</b><br> O Último Desejo<br><b>Progresso:</b></font>
-			
-
-<!-- Maneira com CSS e HTML -->
-
-<div class="progress">
-    <div class="status" style="width: 100%">Concluído</status>
-  </div></td>
-
-
-		</tr>
-
-	</table>
-
-
-  <table id="lar100">
-		<tr>
-			<td>
-				<!--ADICIONAR-->
-				<img src="images/batismoFogo.jpg" style="width:100px;height:150px">
-        <a href="notasLivro.html"><button class="login104-form-btn">Notas</button></a>
-			</td>
-			<td style="width:100%">
-
-				<font color="#6495ED" id="tl"><b>Título:</b><br> Batismo de Fogo<br><b>Progresso:</b></font>
-			
-
-<!-- Maneira com CSS e HTML -->
-
-<div class="progress">
-    <div class="status" style="width: 100%">Concluído</status>
-  </div></td>
-
-
-		</tr>
-
-	</table>
+ 
+	
   <!-- EXEMPLO -->
       
     </section>

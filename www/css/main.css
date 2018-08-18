@@ -245,6 +245,7 @@ iframe {
   border-radius: 3px;
 }
 
+
 /*---------------------------------------------*/
 .input100 {
   font-family: Ubuntu-Bold;
@@ -294,6 +295,18 @@ iframe {
   height: 40px;
   padding: 0 20px 0 38px;
 }
+.input103 {
+  font-family: Ubuntu-Bold;
+  color: #00008B;
+  line-height: 1.2;
+  font-size: 16px;
+
+  display: block;
+  width: 100%;
+  background: transparent;
+  height: 40px;
+  padding: 0 20px 0 38px;
+}
 .input104 {
   font-family: Ubuntu-Bold;
   color: #6495ED;
@@ -305,7 +318,19 @@ iframe {
   background: transparent;
   height: 50px;
   padding: 0 20px 0 38px;
+}.input105 {
+  font-family: Ubuntu-Bold;
+  color: #00008B;
+  line-height: 1.2;
+  font-size: 18px;
+
+  display: block;
+  width: 100%;
+  background: rgb(61, 56, 56);
+  height: 50px;
+  padding: 0 20px 0 38px;
 }
+
 /*------------------------------------------------------------------
 [ Focus Input ]*/
 
@@ -655,3 +680,16 @@ iframe {
 
 /*//////////////////////////////////////////////////////////////////
 [ Responsive ]*/
+
+#txtareaNota{
+  font-family: Ubuntu-Bold;
+  color: #00008B;
+  line-height: 1.2;
+  font-size: 18px;
+
+  display: block;
+  width: 100%;
+  background: transparent;
+  height: 250px;
+  padding: 0 20px 0 38px;
+}

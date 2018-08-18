@@ -250,6 +250,7 @@ table {
   margin-right:25%;
   margin-top: 5px;
   background: #fff;
+  border-radius: 5px;
 }
 
 .progress .status{
@@ -266,7 +267,7 @@ table {
   background: #87CEEB;
   float: left;
   height: 100%;
-  
+  border-radius: 5px;
   padding-left: 5px;
   font-size: 12px;
   line-height: 1.8
@@ -312,6 +313,10 @@ table {
   font-weight: bolder;
   margin-top: 10px;
 }
+#negritoDI2{
+  font-weight: bolder;
+  margin-top: 20px;
+}
 #checkboxS{
   display: inline-block;
 
@@ -335,4 +340,13 @@ table {
 }
 #selecao-arquivo{
   display: none
+}
+
+#botaoNota{
+  margin: 0px;
+  border-radius: 10px;
+   padding: 0px; 
+   width: 75px;
+   height:35px; 
+   font-size: 15px;
 }
