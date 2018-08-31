@@ -89,7 +89,7 @@
   </div>
   <form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
 		<div class="wrap-input100 validate-input m-b-20" data-validate="Necessário nome de usuario">
-			<input class="input103" type="text" name="" placeholder="Pagina atual" id="nome">
+			<input class="input103" type="number" name="" placeholder="Pagina atual" onKeyPress="if(this.value.length==9) return false;" id="nome" id="nome">
 			<input class="login101-form-btn" type="submit" value="Atualizar" onclick="Verificador">
 
 			<span class="focus-input100"></span>

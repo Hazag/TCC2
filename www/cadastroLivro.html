@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/style.css">
 <!--===============================================================================================-->
 <style>
+
  input[type="checkbox"] {
     display:none;
 }
@@ -26,12 +27,12 @@ input[type="checkbox"] + label span {
     height:19px;
     margin:-2px 10px 0 0;
     vertical-align:middle;
-    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+    background:url(images/icons/check_radio_sheet.png) left top no-repeat;
     cursor:pointer;
 }
 
 input[type="checkbox"]:checked + label span {
-    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+    background:url(images/icons/check_radio_sheet.png) -19px top no-repeat;
 }
 
 input[type="radio"] {
@@ -49,13 +50,14 @@ input[type="radio"] + label span {
     height:19px;
     margin:-2px 10px 0 0;
     vertical-align:middle;
-    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -38px top no-repeat;
+    background:url(images/icons/check_radio_sheet.png) -38px top no-repeat;
     cursor:pointer;
 }
 
 input[type="radio"]:checked + label span {
-    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -57px top no-repeat;
+    background:url(images/icons/check_radio_sheet.png) -57px top no-repeat;
 }
+
 
   </style>
 <!--===============================================================================================-->  
@@ -81,37 +83,37 @@ input[type="radio"]:checked + label span {
           
 
 					<div class="wrap-input100  m-b-16">
-						<input class="input100" type="text" name="isbn" placeholder="ISBN" id="nome" >
+						<input class="input100" type="number" name="isbn" placeholder="ISBN"   onKeyPress="if(this.value.length==13) return false;" min="0" id="nome" >
 						<span class="focus-input100"></span>
 					</div>
 
           <div class="wrap-input100 validate-input m-b-16" data-validate="Necessário titulo do livro">
-						<input class="input100" type="text" name="titulo" placeholder="Titulo" id="nome">
+						<input class="input100" type="text" name="titulo" placeholder="Titulo" maxlength="40" id="nome">
 						<span class="focus-input100"></span>
 					</div>
 
           <div class="wrap-input100 validate-input m-b-16" data-validate="Necessário informar numero de paginas">
-						<input class="input100" type="text" name="paginas" placeholder="Páginas" id="nome">
+						<input class="input100" type="number" name="paginas" placeholder="Páginas" onKeyPress="if(this.value.length==9) return false;" min="0"  id="nome">
 						<span class="focus-input100"></span>
 					</div>
 
           <div class="wrap-input100 m-b-16">
-						<input class="input100" type="text" name="autor" placeholder="Autor" id="nome">
+						<input class="input100" type="text" name="autor"  placeholder="Autor" maxlength="40" id="nome">
 						<span class="focus-input100"></span>
 					</div>
           
           <div class="wrap-input100 m-b-16">
-						<input class="input100" type="text" name="edicao" placeholder="Edição" id="nome">
+						<input class="input100" type="number" name="edicao" placeholder="Edição" onKeyPress="if(this.value.length==4) return false;" min="0"  id="nome">
 						<span class="focus-input100"></span>
 					</div>
 
           <div class="wrap-input100 m-b-16">
-						<input class="input100" type="text" name="anoEdicao" placeholder="Ano de Edição" id="nome">
+						<input class="input100" type="number" name="anoEdicao" placeholder="Ano de Edição"  onKeyPress="if(this.value.length==4) return false;" min="0"  id="nome">
 						<span class="focus-input100"></span>
 					</div>
           
           <div class="wrap-input100 m-b-16">
-						<input class="input100" type="text" name="editor" placeholder="Editor(a)" id="nome">
+						<input class="input100" type="text" name="editor" placeholder="Editor(a)" maxlength="40" id="nome">
 						<span class="focus-input100"></span>
 					</div>
          <!--===============================================================================================-->  
@@ -168,7 +170,7 @@ input[type="radio"]:checked + label span {
   <input type="file" name="myfile" />
 </div>
         <!--===============================================================================================-->  
-						<input class="login100-form-btn" type="submit" value="Criar nota" onclick="Verificador">
+						<input class="login100-form-btn" type="submit" value="Cadastrar" onclick="Verificador">
 
 
 
@@ -228,13 +230,13 @@ input[type="radio"]:checked + label span {
       </nav>
     </header>
 
-    <section id="home">
+    
     
  
 	
   <!-- EXEMPLO -->
       
-    </section>
+   
 
 
     <script src="js/fastclick.js"></script>

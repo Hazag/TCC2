@@ -281,31 +281,20 @@ iframe {
   width: 50%;
   background: transparent;
   height: 40px;
-  padding: 0 20px 0 38px;
+  padding: 0 0px 0 10px;
 }
+
 .input103 {
   font-family: Ubuntu-Bold;
   color: #00008B;
   line-height: 1.2;
-  font-size: 18px;
+  font-size: 19px;
 
   display: block;
-  width: 100%;
+  width: 110%;
   background: transparent;
   height: 40px;
-  padding: 0 20px 0 38px;
-}
-.input103 {
-  font-family: Ubuntu-Bold;
-  color: #00008B;
-  line-height: 1.2;
-  font-size: 16px;
-
-  display: block;
-  width: 100%;
-  background: transparent;
-  height: 40px;
-  padding: 0 20px 0 38px;
+  padding: 0 15% 0 15%;
 }
 .input104 {
   font-family: Ubuntu-Bold;
@@ -326,7 +315,7 @@ iframe {
 
   display: block;
   width: 100%;
-  background: rgb(61, 56, 56);
+  background: rgba(162, 162, 165, 0.6);
   height: 50px;
   padding: 0 20px 0 38px;
 }
@@ -654,7 +643,59 @@ iframe {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
+.login107-form-btn {
+  font-family: Ubuntu-Bold;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
 
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  float: right;
+  width: 50%;
+  height: 25px;
+  background-color: rgba(10,23,55,0.5);
+  border-radius: 3px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.login108-form-btn {
+  font-family: Ubuntu-Bold;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  float:left;
+  width: 100%;
+   height:35px;
+  background-color: rgba(10,23,55,0.5);
+  border-radius: 3px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
 .login100-form-btn:hover {
   background-color: #000000;
 }
@@ -671,6 +712,12 @@ iframe {
   background-color: #000000;
 }
 .login106-form-btn:hover {
+  background-color: #000000;
+}
+.login107-form-btn:hover {
+  background-color: #000000;
+}
+.login108-form-btn:hover {
   background-color: #000000;
 }
 /*------------------------------------------------------------------
@@ -760,4 +807,65 @@ iframe {
   border-right: 6px solid black ;
   margin: 0px;
    padding: 6px;
+}
+
+
+
+
+
+
+
+
+
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  width: 80%;
+  height:15%;
+  position: relative;
+  margin: 100% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+  background: #fff;
 }
