@@ -83,37 +83,37 @@ input[type="radio"]:checked + label span {
           
 
 					<div class="wrap-input100  m-b-16">
-						<input class="input100" type="number" name="isbn" placeholder="ISBN" id="nome" >
+						<input class="input100" type="number" name="isbn" placeholder="ISBN"  onKeyPress="if(this.value.length==13) return false;" min="0" id="nome" >
 						<span class="focus-input100"></span>
 					</div>
 
           <div class="wrap-input100 validate-input m-b-16" data-validate="Necessário titulo do livro">
-						<input class="input100" type="text" name="titulo" placeholder="Titulo" id="nome">
+						<input class="input100" type="text" name="titulo" placeholder="Titulo" maxlength="40" id="nome">
 						<span class="focus-input100"></span>
 					</div>
 
           <div class="wrap-input100 validate-input m-b-16" data-validate="Necessário informar numero de paginas">
-						<input class="input100" type="number" name="paginas" placeholder="Páginas" id="nome">
+						<input class="input100" type="number" name="paginas" placeholder="Páginas" onKeyPress="if(this.value.length==9) return false;" min="0" id="nome">
 						<span class="focus-input100"></span>
 					</div>
 
           <div class="wrap-input100 m-b-16">
-						<input class="input100" type="text" name="autor" placeholder="Autor" id="nome">
+						<input class="input100" type="text" name="autor" placeholder="Autor" maxlength="40" id="nome">
 						<span class="focus-input100"></span>
 					</div>
           
           <div class="wrap-input100 m-b-16">
-						<input class="input100" type="text" name="edicao" placeholder="Edição" id="nome">
+						<input class="input100" type="text" name="edicao" placeholder="Edição" onKeyPress="if(this.value.length==4) return false;" min="0" id="nome">
 						<span class="focus-input100"></span>
 					</div>
 
           <div class="wrap-input100 m-b-16">
-						<input class="input100" type="number" name="anoEdicao" placeholder="Ano de Edição" id="nome">
+						<input class="input100" type="number" name="anoEdicao" placeholder="Ano de Edição"  onKeyPress="if(this.value.length==4) return false;" min="0" id="nome">
 						<span class="focus-input100"></span>
 					</div>
           
           <div class="wrap-input100 m-b-16">
-						<input class="input100" type="text" name="editor" placeholder="Editor(a)" id="nome">
+						<input class="input100" type="text" name="editor" placeholder="Editor(a)" maxlength="40" id="nome">
 						<span class="focus-input100"></span>
 					</div>
          <!--===============================================================================================-->  

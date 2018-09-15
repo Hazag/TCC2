@@ -39,12 +39,8 @@ function uncheck() {
 <div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-b-90">
-				<form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
-					
-
-          
-          
-
+			
+	
 					<div class="wrap-input100 validate-input m-b-20" data-validate="Necessário titulo do livro">
 						<input class="input105" type="text" name="titulo" placeholder="A Espada do Destino"  id="nome" disabled>
 						<span class="focus-input100"></span>
@@ -53,17 +49,17 @@ function uncheck() {
             
           
           </div>
-          <div class="wrap-input100 validate-input m-b-16 " data-validate="Necessário informar numero de referência">
-						<input class="input100 text" type="number" name="paginas" placeholder="Nota referente á página" min="0"  onKeyPress="if(this.value.length==9) return false;" id="nome">
+          <div class="wrap-input100 validate-input m-b-35 " data-validate="Necessário informar numero de referência">
+						<input class="input100 text" type="number" name="paginas" placeholder="Nota referente á página" min="0"  onKeyPress="if(this.value.length==9) return false;" id="pagina">
             <input type="button" class="login107-form-btn" name="botao-ok" value="capítulo" onclick="check()">
-						<input type="button" class="login107-form-btn" name="botao-ok" value="Página" onclick="uncheck()">
+						<input type="button" class="login107-form-btn" name="botao-ok" value="Página" onclick="uncheck()" id="capitulo">
 						<span class="focus-input100"></span>
             
 					</div>
          
 
           <div class="wrap-input100 m-b-16">
-						<input class="input100" type="text" name="tituloNota" placeholder="Título da nota" maxlength="40" id="nome">
+						<input class="input100" type="text" name="tituloNota" placeholder="Título da nota"  id="titulo">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -74,7 +70,7 @@ function uncheck() {
          
 
 
-						<input class="login100-form-btn" type="submit" value="Criar nota" >
+						<input class="login100-form-btn" type="submit" value="Criar nota" id="nota" >
 
 
 
@@ -82,7 +78,7 @@ function uncheck() {
           <div>
 						
 
-				</form>
+			
 
 				
 			</div>

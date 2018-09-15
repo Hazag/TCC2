@@ -1,26 +1,32 @@
-// This is a JavaScript file
-$(document).on("click", "login01", function() {
+1// This is a JavaScript file
+$(document).on("click", "#login01", function() {
+  if($("#senhaCadastro").val()==$("#confirmeSenhaCadastro").val()){
     var parametros={ 
         "nome": $("#nomeCadastro").val(),
         "email": $("#emailCadastro").val(),
-        "senha": $("#senhaCadastro").val(),
-        "cSenhaCadastro": $("#confirmeSenhaCadastro").val()
+        "senha": $("#senhaCadastro").val()
     };
-
     $.ajax({
       type:"post",
-      url:"https://tcc-nicollepereira.c9users.io/login.php",
+      url:"https://tcc-nicollepereira.c9users.io/cadastro.php",
       data:parametros,
       success: function(data){
         navigator.notification.alert(data);
         $("#nomeCadastro").val(""),
         $("#emailCadastro").val(""),
-        $("#senhaCadastro").val(""),
-        $("#confirmeSenhaCadastro").val("")
+        $("#senhaCadastro").val("")
       },
       error:function(data){
         navigator.notification.alert("erro"+data);
       }
 
     });
+  }else{
+    navigator.notification.alert("As senhas não coincidem");
+  }
+    
+
+    
 });
+
+

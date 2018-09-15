@@ -204,11 +204,7 @@ div.figura p {
   text-indent: 0;
 }
 
-#titulo{
-   text-align: center;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-}
+
 
 
 
@@ -316,6 +312,19 @@ table {
   margin-top: 10px;
 }
 #negritoDcss{
+  font-weight: bolder;
+  margin-top: 10px;
+  border-radius: 10px;
+
+
+
+    width:50%;
+    
+    height:30px;
+    
+    background-color: rgba(10,23,55,0.5);
+}
+#negritoDcss23{
   font-weight: bolder;
   margin-top: 10px;
   border-radius: 10px;
