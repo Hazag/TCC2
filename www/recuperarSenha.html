@@ -14,6 +14,28 @@
             console.log("PhoneGap is ready");
         
         }
+        
+        function validacaoEmail(field) {
+usuario = field.value.substring(0, field.value.indexOf("@"));
+dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
+if ((usuario.length >=1) &&
+    (dominio.length >=3) && 
+    (usuario.search("@")==-1) && 
+    (dominio.search("@")==-1) &&
+    (usuario.search(" ")==-1) && 
+    (dominio.search(" ")==-1) &&
+    (dominio.search(".")!=-1) &&      
+    (dominio.indexOf(".") >=1)&& 
+    (dominio.lastIndexOf(".") < dominio.length - 1)) {
+nome.style.backgroundColor = "rgba(0,255,0,0.3)";
+$('#we2').removeAttr('disabled');
+}
+else{
+alert("E-mail invalido");
+nome.style.backgroundColor = "rgba(255,0,0,0.3)";
+$('#we2').attr('disabled', 'disabled');
+}
+}
     </script>
     
     <title>Recuperar Senha</title>
@@ -46,38 +68,21 @@
 <div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-50 p-b-90">
-				<form action="recuperarSenha.php" method="POST" class="login100-form validate-form flex-sb flex-w">
-					<span class="login100-form-title p-b-51">
-						Recuperar senha
-					</span>
-
-          <div class="wrap-input100 validate-input m-b-16" data-validate = "Necessário email do usuario">
-						<input class="input100" type="text" name="email" placeholder="Email" id="nome">
-						<span class="focus-input100"></span>
+				<p class="m-b-41" style="font-size:15px; color:black; text-align:center;">Digite o email registrado em seu cadastro para enviarmos um link onde poderá criar uma nova senha.</p>
+					<form name="f1">
+          
+          <div class="wrap-input100  m-b-16">
+						<input class="input100" type="text" name="email" placeholder="Email" onblur="validacaoEmail(f1.email)" id="nome">
 					</div>
-					
-					
-					<div class="flex-sb-m w-full p-t-3 p-b-24">
-						<div class="contact100-form-checkbox">
-						</div>
-					</div>
+					</form>
 					<div class="container-login100-form-btn m-t-17">
-						
-						<input class="login100-form-btn" type="submit" value="Confirmar" onclick="Verificador">
-							
-						
+					  <input class="login100-form-btn" type="submit" disabled id="we2" value="Confirmar">
 					</div>
-          
 
-          
-
-				</form>
 			</div>
 		</div>
 	</div>
-	
 
-	<div id="dropDownSelect1"></div>
 	
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -96,14 +101,7 @@
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
-    <!--<a class="button--large" href="phonegap-demo.html">Start Demo</a>-->
-   
-</body>
-<footer><!-- informações complementares, que são apresentados na parte inferior da tela-->
 
-       
-         
-</footer>
-    
+</body>
 
 </html>

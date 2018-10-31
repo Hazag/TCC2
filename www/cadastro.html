@@ -7,21 +7,21 @@
 	<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
 	<script src="components/loader.js"></script>
   <script src="components/cadastro.js"></script>
+   <script src="components/valid.js"></script>
 	<link rel="stylesheet" href="components/loader.css">
 	<link rel="stylesheet" href="css/style.css">
+  <script src="js/cadastro.js" type="text/javascript"></script> 
+
 	<script>
 		// PhoneGap event handler
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() {
             console.log("PhoneGap is ready");
-
-            function funcao_a() {
-  href="index.html"
 }
 
-        }
-	</script>
 
+	</script>
+  
 	<title>Login</title>
 
 	<meta charset="UTF-8">
@@ -53,59 +53,31 @@
 
 <body  id="telaGrecia2">
 
-	<div class="limiter">
+	<form name="f1">
 		<div class="container-login100">
-			<div class="wrap-login100 p-t-50 p-b-90">
-			
-					<span class="login100-form-title p-b-51">
-						Cadastro
-					</span>
-
-
-					<div class="wrap-input100 validate-input m-b-16" data-validate="Necessário nome de usuario">
-						<input class="input100" type="text" name="nome" placeholder="Nome" id="nomeCadastro">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input m-b-16" data-validate="Necessário email do usuario">
-						<input class="input100" type="text" name="email" placeholder="Email" id="emailCadastro">
-						<span class="focus-input100"></span>
-					</div>
-
-
-					<div class="wrap-input100 validate-input m-b-16" data-validate="Necessário senha">
-						<input class="input100" type="password" name="senha" placeholder="Senha" id="senhaCadastro">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input m-b-16" data-validate="Necessário confirmar senha">
-						<input class="input100" type="password" name="cSenha" placeholder="Confirme a senha" id="confirmeSenhaCadastro">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="flex-sb-m w-full p-t-3 p-b-24">
-						<div class="contact100-form-checkbox">
-						</div>
-					</div>
-					<div class="container-login100-form-btn m-t-17">
-
-						<input class="login100-form-btn" type="submit" value="Cadastrar"id="login01">
-
-
-
-					</div>
-
-
-			
-
-				
+			<div class="wrap-login100">
+        <span class="login100-form-title p-b-51">Cadastro</span>
+        <div class="wrap-input100 validate-input m-b-16" data-validate="Necessário nome de usuario">
+					<input class="input100" type="text" name="nome" placeholder="Nome" id="nomeCadastro">
+				</div>
+        <div class="wrap-input100 validate-input m-b-16" data-validate="Necessário email do usuario">
+					<input class="input100" type="text" name="email" onblur="validacaoEmail(f1.email)" placeholder="Email"  id="emailCadastro">
+          
+				</div>
+        <div class="wrap-input100 validate-input m-b-16" data-validate="Necessário senha">
+					<input class="input100" type="password" name="senha" placeholder="Senha"  id="senhaCadastro">
+				</div>
+				<div class="wrap-input100 validate-input m-b-16" data-validate="Necessário confirmar senha">
+					<input class="input100" type="password" name="cSenha" placeholder="Confirme a senha"  id="confirmeSenhaCadastro">
+				</div>
+        </form>
+        <div class="container-login100-form-btn m-t-17">
+					<input class="login100-form-btn" type="submit" name="dfg" disabled value="Cadastrar"  onblur="validacaoEmail2(f1.dfg)" id="login01">
+				</div>		
 			</div>
 		</div>
-	</div>
-
-
-	<div id="dropDownSelect1"></div>
-
+	
+  
 	<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 	<!--===============================================================================================-->
@@ -123,15 +95,6 @@
 	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
-	<!--<a class="button--large" href="phonegap-demo.html">Start Demo</a>-->
-
 </body>
-<footer>
-	<!-- informações complementares, que são apresentados na parte inferior da tela-->
-
-
-
-</footer>
-
 
 </html>

@@ -52,7 +52,7 @@
     // Find navigation links and save a reference to them
     var nav = document.querySelector(".nav-collapse ul"),
       links = nav.querySelectorAll("[data-scroll]");
-
+try {
     // "content" will store all the location cordinates
     var content;
 
@@ -64,10 +64,10 @@
         content.push(document.getElementById(href).offsetTop + 200);
       });
     };
-
+    
     // call locations set up once
     setupLocations();
-
+   
     // Re-calculate locations on window resize and orientation change
     window.addEventListener("resize", function () {
       setupLocations();
@@ -166,12 +166,18 @@
             history.pushState("", document.title, window.location.pathname);
           }
         }
-
+      
         // Clear wasNavigationTapped check
         clearTapCheck();
       }, false);
     });
-
+  }
+  catch(exception){
+    
+}
+finally {
+    
+}
   }
 
 })();

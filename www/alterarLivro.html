@@ -8,6 +8,7 @@
 	<script src="components/loader.js"></script>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/responsive-nav.js"></script>
+    <script src="components/menu.js"></script>
 	<link rel="stylesheet" href="components/loader.css">
 	<link rel="stylesheet" href="css/style.css">
 <!--===============================================================================================-->
@@ -57,135 +58,7 @@ input[type="radio"] + label span {
 input[type="radio"]:checked + label span {
     background:url(images/icons/check_radio_sheet.png) -57px top no-repeat;
 }
-
-
   </style>
-<!--===============================================================================================-->  
-	<script>
-		// PhoneGap event handler
-        document.addEventListener("deviceready", onDeviceReady, false);
-        function onDeviceReady() {
-            console.log("PhoneGap is ready");
-	</script>
-  <span class="login100-form-title p-b-51">
-						
-					</span>
-
-
-
-<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
-					
-
-          
-          
-
-					<div class="wrap-input100  m-b-16">
-						<input class="input100" type="number" name="isbn" placeholder="ISBN"  onKeyPress="if(this.value.length==13) return false;" min="0" id="nome" >
-						<span class="focus-input100"></span>
-					</div>
-
-          <div class="wrap-input100 validate-input m-b-16" data-validate="Necessário titulo do livro">
-						<input class="input100" type="text" name="titulo" placeholder="Titulo" maxlength="40" id="nome">
-						<span class="focus-input100"></span>
-					</div>
-
-          <div class="wrap-input100 validate-input m-b-16" data-validate="Necessário informar numero de paginas">
-						<input class="input100" type="number" name="paginas" placeholder="Páginas" onKeyPress="if(this.value.length==9) return false;" min="0" id="nome">
-						<span class="focus-input100"></span>
-					</div>
-
-          <div class="wrap-input100 m-b-16">
-						<input class="input100" type="text" name="autor" placeholder="Autor" maxlength="40" id="nome">
-						<span class="focus-input100"></span>
-					</div>
-          
-          <div class="wrap-input100 m-b-16">
-						<input class="input100" type="text" name="edicao" placeholder="Edição" onKeyPress="if(this.value.length==4) return false;" min="0" id="nome">
-						<span class="focus-input100"></span>
-					</div>
-
-          <div class="wrap-input100 m-b-16">
-						<input class="input100" type="number" name="anoEdicao" placeholder="Ano de Edição"  onKeyPress="if(this.value.length==4) return false;" min="0" id="nome">
-						<span class="focus-input100"></span>
-					</div>
-          
-          <div class="wrap-input100 m-b-16">
-						<input class="input100" type="text" name="editor" placeholder="Editor(a)" maxlength="40" id="nome">
-						<span class="focus-input100"></span>
-					</div>
-         <!--===============================================================================================-->  
-         <div class=" m-b-16">
-          <font color="#1C1C1C" id="negrito">Definir metas através de:</font>
-						<span class="focus-input100"></span>
-          <input type="radio" id="r1" name="rr" />
-    <label for="r1"><span></span>Nº de páginas</label>
-  <span class="checkmark"></span>
-</label>
-  <input type="radio" id="r2" name="rr" />
-    <label for="r2"><span></span>Nº de capítulos</label>
-  <span class="checkmark"></span>
-</label>
-
-  <input type="radio" id="r4" name="rr" />
-    <label for="r4"><span></span>Marcar como concluído</label>
-  <span class="checkmark"></span>
-</label>
-</div>
-
-<div class=" m-b-16">
-  <font color="#1C1C1C" id="negrito">Dias da semana de estudo:</font>
-						<span class="focus-input100"></span>
-            <input type="checkbox" id="c1" name="cc0" />
-    <label for="c1"><span></span>Segunda-feira</label>
-<input type="checkbox" id="c2" name="cc1" />
-    <label for="c2"><span></span>Terça-feira</label>
-<input type="checkbox" id="c3" name="cc2" />
-    <label for="c3"><span></span>Quarta-feira</label>
-<input type="checkbox" id="c4" name="cc3" />
-    <label for="c4"><span></span>Quinta-feira</label>
-<input type="checkbox" id="c5" name="cc4" />
-    <label for="c5"><span></span>Sexta-feira</label>
-<input type="checkbox" id="c6" name="cc5" />
-    <label for="c6"><span></span>Sábado</label>
-<input type="checkbox" id="c7" name="cc6" />
-    <label for="c7"><span></span>Domingo</label>
-</div>
-
-<div class="m-b-16">
-<font color="#1C1C1C" id="negritoDI" ><br>Data de inicio:</font>
-						<input type="date" id="negritoDcss">
-            <br>
-            <font color="#1C1C1C" id="negritoDI">Data de termino:</font>
-						<input type="date" id="negritoDcss">
-            <div class="m-t-16">
-            <font color="#1C1C1C" id="negritoDI2">Capa do livro:</font>
-            </div>
-          
-  </div>
-  <div class="upload-btn-wrapper m-b-20">
-  <button class="btnupc" id="da">Upload capa</button>
-  <input type="file" name="myfile" />
-</div>
-        <!--===============================================================================================-->  
-						<input class="login100-form-btn" type="submit" value="Criar nota" onclick="Verificador">
-
-
-
-					
-          <div>
-						
-
-				</form>
-
-				
-			</div>
-		</div>
-	</div>
-
-
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -217,7 +90,7 @@ input[type="radio"]:checked + label span {
 
 <body id="telaPagina">
   <header>
-      <a href="#home" class="logo" data-scroll>Alterar livro</a>
+       <a href="#home" class="logo" data-scroll>Alterar livro</a>
       <nav class="nav-collapse">
         <ul>
           <li class="menu-item active"><a href="biblioteca.html" data-scroll>Livros em andamento</a></li>
@@ -230,14 +103,102 @@ input[type="radio"]:checked + label span {
       </nav>
     </header>
 
-    
-    
- 
-	
-  <!-- EXEMPLO -->
-      
-   
+    <span class="login100-form-title p-b-51">
+						
+					</span>
 
+
+
+<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
+					
+					<div class="wrap-input100  m-b-16">
+						<input class="input100" type="number" name="isbn" placeholder="ISBN"  onKeyPress="if(this.value.length==13) return false;" min="0" id="nome" >
+					</div>
+
+          <div class="wrap-input100 validate-input m-b-16" data-validate="Necessário titulo do livro">
+						<input class="input100" type="text" name="titulo" placeholder="Titulo" maxlength="40" id="nome">
+					</div>
+
+          <div class="wrap-input100 validate-input m-b-16" data-validate="Necessário informar numero de paginas">
+						<input class="input100" type="number" name="paginas" placeholder="Páginas" onKeyPress="if(this.value.length==9) return false;" min="0" id="nome">
+					</div>
+
+          <div class="wrap-input100 m-b-16">
+						<input class="input100" type="text" name="autor" placeholder="Autor" maxlength="40" id="nome">
+					</div>
+          
+          <div class="wrap-input100 m-b-16">
+						<input class="input100" type="text" name="edicao" placeholder="Edição" onKeyPress="if(this.value.length==4) return false;" min="0" id="nome">
+					</div>
+
+          <div class="wrap-input100 m-b-16">
+						<input class="input100" type="number" name="anoEdicao" placeholder="Ano de Edição"  onKeyPress="if(this.value.length==4) return false;" min="0" id="nome">
+					</div>
+          
+          <div class="wrap-input100 m-b-16">
+						<input class="input100" type="text" name="editor" placeholder="Editor(a)" maxlength="40" id="nome">
+					</div>
+         <!--===============================================================================================-->  
+         <div class=" m-b-16">
+          <font color="#1C1C1C" id="negrito">Definir metas através de:</font>
+						<span class="focus-input100"></span>
+          <input type="radio" id="r1" name="rr" />
+    <label for="r1"><span></span>Nº de páginas</label>
+  
+</label>
+  <input type="radio" id="r2" name="rr" />
+    <label for="r2"><span></span>Nº de capítulos</label>
+  
+</label>
+
+  <input type="radio" id="r4" name="rr" />
+    <label for="r4"><span></span>Marcar como concluído</label>
+  
+</label>
+</div>
+
+  <div class=" m-b-16">
+    <font color="#1C1C1C" id="negrito">Dias da semana de estudo:</font>
+              <span class="focus-input100"></span>
+              <input type="checkbox" id="c1" name="cc0" />
+      <label for="c1"><span></span>Segunda-feira</label>
+  <input type="checkbox" id="c2" name="cc1" />
+      <label for="c2"><span></span>Terça-feira</label>
+  <input type="checkbox" id="c3" name="cc2" />
+      <label for="c3"><span></span>Quarta-feira</label>
+  <input type="checkbox" id="c4" name="cc3" />
+      <label for="c4"><span></span>Quinta-feira</label>
+  <input type="checkbox" id="c5" name="cc4" />
+      <label for="c5"><span></span>Sexta-feira</label>
+  <input type="checkbox" id="c6" name="cc5" />
+      <label for="c6"><span></span>Sábado</label>
+  <input type="checkbox" id="c7" name="cc6" />
+      <label for="c7"><span></span>Domingo</label>
+  </div>
+
+  <div class="m-b-16">
+    <font color="#1C1C1C" id="negritoDI" ><br>Data de inicio:</font>
+    <input type="date" id="negritoDcss">
+    <br>
+    <font color="#1C1C1C" id="negritoDI">Data de termino:</font>
+    <input type="date" id="negritoDcss">
+    <div class="m-t-16">
+      <font color="#1C1C1C" id="negritoDI2">Capa do livro:</font>
+    </div>
+  </div>
+  <div class="upload-btn-wrapper m-b-20">
+    <button class="btnupc" id="da">Upload capa</button>
+    <input type="file" name="myfile" />
+  </div> 
+<!--===============================================================================================-->  
+  <input class="login100-form-btn" type="submit" value="Criar nota" onclick="Verificador">
+  </form>
+</div>
+</div>
+</div>
 
     <script src="js/fastclick.js"></script>
     <script src="js/scroll.js"></script>
@@ -261,16 +222,7 @@ input[type="radio"]:checked + label span {
 	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
-	<!--<a class="button--large" href="phonegap-demo.html">Start Demo</a>-->
 
 </body>
-<footer>
-	<!-- informações complementares, que são apresentados na parte inferior da tela-->
-
-
-
-
-</footer>
-
 
 </html>

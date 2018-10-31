@@ -108,19 +108,22 @@ h1 {
 }
 #ca{
  position: absolute;
+ text-decoration: none;
  margin-left: 5%;
  color:black;
 }
 #ems{
   position: absolute;
-  margin-left: 60%;
+  margin-left: 47%;
+  text-decoration: none;
  color:black;
 }
 #telaGrecia{
   background-image: url(../images/greciamedia.jpg);
   background-position: center;
   background-attachment: fixed;
-    background-position: 45% 5%;
+  background-size: 325%;
+    background-position: 44% 10%;
 background-repeat: no-repeat;
 }
 #telaPagina{
@@ -134,7 +137,8 @@ background-repeat: no-repeat;
   background-image: url(../images/greciamedia.jpg);
   background-position: center;
   background-attachment: fixed;
-    background-position: 55% 85%;
+  background-size: 325%;
+    background-position: 44% 41%;
 background-repeat: no-repeat;
 }
 
@@ -459,10 +463,20 @@ table {
 #da{
   width:100%;
 }
-
-
-
-
+#tituloAjuda{
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.opacidadeN {
+  background-color: rgba(10,23,55,0.1);
+}
+.opacidadeN1 {
+  opacity: 1.0;
+}
+#mcrbt{
+  background: rgba(17, 42, 104, 0.5);
+}
 
 
 

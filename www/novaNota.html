@@ -6,9 +6,11 @@
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
 	<script src="components/loader.js"></script>
-  <link rel="stylesheet" href="css/styles.css">
+  	<script src="components/novanota.js"></script>
   <script src="js/responsive-nav.js"></script>
-	<link rel="stylesheet" href="components/loader.css">
+	<script src="components/menu.js"></script>
+   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="components/loader.css">
 	<link rel="stylesheet" href="css/style.css">
 <!--===============================================================================================-->
 <script>
@@ -20,72 +22,9 @@ function check() {
 
 function uncheck() {
     $('.text').attr('placeholder','Nota referente á página');
-    $('.text').val('');
+    $('.text').val('');  
 }
 </script>
-<!--===============================================================================================-->  
-	<script>
-		// PhoneGap event handler
-        document.addEventListener("deviceready", onDeviceReady, false);
-        function onDeviceReady() {
-            console.log("PhoneGap is ready");
-	</script>
-  <span class="login100-form-title p-b-51">
-						
-					</span>
-
-
-
-<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100 p-b-90">
-			
-	
-					<div class="wrap-input100 validate-input m-b-20" data-validate="Necessário titulo do livro">
-						<input class="input105" type="text" name="titulo" placeholder="A Espada do Destino"  id="nome" disabled>
-						<span class="focus-input100"></span>
-					</div>
-          <div class=" m-b-16">
-            
-          
-          </div>
-          <div class="wrap-input100 validate-input m-b-35 " data-validate="Necessário informar numero de referência">
-						<input class="input100 text" type="number" name="paginas" placeholder="Nota referente á página" min="0"  onKeyPress="if(this.value.length==9) return false;" id="pagina">
-            <input type="button" class="login107-form-btn" name="botao-ok" value="capítulo" onclick="check()">
-						<input type="button" class="login107-form-btn" name="botao-ok" value="Página" onclick="uncheck()" id="capitulo">
-						<span class="focus-input100"></span>
-            
-					</div>
-         
-
-          <div class="wrap-input100 m-b-16">
-						<input class="input100" type="text" name="tituloNota" placeholder="Título da nota"  id="titulo">
-						<span class="focus-input100"></span>
-					</div>
-
-          <div class="wrap-input100 m-b-16">
-            <textarea name="nota" cols="40" rows="5"  placeholder="Nota"  id="txtareaNota"></textarea>
-						<span class="focus-input100"></span>
-					</div>
-         
-
-
-						<input class="login100-form-btn" type="submit" value="Criar nota" id="nota" >
-
-
-
-					
-          <div>
-						
-
-			
-
-				
-			</div>
-		</div>
-	</div>
-
-
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -128,16 +67,41 @@ function uncheck() {
           <li class="menu-item"><a href="index.html" data-scroll>Deslogar</a></li>
         </ul>
       </nav>
-    </header>
+  </header>
+  <!--===============================================================================================-->  
 
-    <section id="home">
-    
- 
+<div class="limiter p-t-51">
+		<div class="container-login100">
+			<div class="wrap-login100 p-b-90">
+			
 	
+					<div class="wrap-input100 validate-input m-b-20" data-validate="Necessário titulo do livro">
+						<input class="input105" type="text" name="titulo" placeholder="Nome do livro" id="nome"  >
+					</div>
+          
+          <div class="wrap-input100 validate-input m-t-16 m-b-35 " data-validate="Necessário informar numero de referência">
+						<input class="input100 text" type="number" name="paginas" placeholder="Nota referente á página" min="0"  onKeyPress="if(this.value.length==9) return false;" id="nr">
+            <input type="button" class="login107-form-btn" name="botao-ok" value="capitulo" onclick="check()" id="capitulo" >
+						<input type="button" class="login107-form-btn" name="botao-ok" value="pagina" onclick="uncheck()" id="pagina">
+					</div>
+         
+         <div class="wrap-input100 m-b-16">
+						<input class="input100" type="text" name="tituloNota" placeholder="Título da nota"  id="titulo">
+					</div>
+
+          <div class="wrap-input100 m-b-16">
+            <textarea name="nota" cols="40" rows="5"  placeholder="descricao"  id="txtareaNota"></textarea>
+					</div>
+
+          <input class="login100-form-btn" type="submit" value="Criar nota" id="novanota" >
+
+			</div>
+		</div>
+	</div>
+  
   <!-- EXEMPLO -->
       
-    </section>
-
+  
 
     <script src="js/fastclick.js"></script>
     <script src="js/scroll.js"></script>
@@ -164,13 +128,5 @@ function uncheck() {
 	<!--<a class="button--large" href="phonegap-demo.html">Start Demo</a>-->
 
 </body>
-<footer>
-	<!-- informações complementares, que são apresentados na parte inferior da tela-->
-
-
-
-
-</footer>
-
 
 </html>

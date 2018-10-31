@@ -61,6 +61,7 @@ window.smoothScroll = (function (window, document, undefined) {
   // Calculate how far to scroll
   // Private method
   // Returns an integer
+  try {
   var _getEndLocation = function ( anchor, headerHeight ) {
     var location = 0;
     if (anchor.offsetParent) {
@@ -76,7 +77,10 @@ window.smoothScroll = (function (window, document, undefined) {
       return 0;
     }
   };
-
+  }
+  catch(err) {
+    document.write("Ocorreu um erro: " + err.message);
+}
   // Convert data-options attribute into an object of key/value pairs
   // Private method
   // Returns an {object}

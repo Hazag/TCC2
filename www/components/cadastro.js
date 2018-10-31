@@ -1,6 +1,13 @@
 1// This is a JavaScript file
 $(document).on("click", "#login01", function() {
+  
   if($("#senhaCadastro").val()==$("#confirmeSenhaCadastro").val()){
+     if($("#nomeCadastro").val() =='' || $("#emailCadastro").val() =='' || $("#senhaCadastro").val() ==''  || $("#confirmeSenhaCadastro").val() =='')
+  {
+alert("Cadastro incompleto");
+  }
+  else
+  {
     var parametros={ 
         "nome": $("#nomeCadastro").val(),
         "email": $("#emailCadastro").val(),
@@ -21,6 +28,8 @@ $(document).on("click", "#login01", function() {
       }
 
     });
+  }
+    
   }else{
     navigator.notification.alert("As senhas não coincidem");
   }

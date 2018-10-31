@@ -8,6 +8,7 @@
 	<script src="components/loader.js"></script>
 	<script src="components/cadastrolivro.js"></script>
 	<script src="js/responsive-nav.js"></script>
+  <script src="components/menu.js"></script>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="components/loader.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -60,104 +61,7 @@
 	</style>
 	<!--===============================================================================================-->
 
-	<span class="login100-form-title p-b-51">
-						
-					</span>
-
-
-
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<div class="wrap-input100 validate-input m-b-16" data-validate="Necessário titulo do livro">
-					<input class="input100" type="text" name="titulo" placeholder="Titulo" maxlength="40" id="nomeLivro">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 validate-input m-b-16" data-validate="Necessário informar numero de paginas">
-					<input class="input100" type="number" name="paginas" placeholder="Páginas" onKeyPress="if(this.value.length==9) return false;"
-					 min="0" id="paginasLivro">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 m-b-16">
-					<input class="input100" type="text" name="autor" placeholder="Autor" maxlength="40" id="autorLivro">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 m-b-16">
-					<input class="input100" type="number" name="edicao" placeholder="Edição" onKeyPress="if(this.value.length==4) return false;"
-					 min="0" id="edicaoLivro">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 m-b-16">
-					<input class="input100" type="number" name="anoEdicao" placeholder="Ano de Edição" onKeyPress="if(this.value.length==4) return false;"
-					 min="0" id="anoEdicaoLivro">
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="wrap-input100 m-b-16">
-					<input class="input100" type="text" name="editor" placeholder="Editor(a)" maxlength="40" id="editorLivro">
-					<span class="focus-input100"></span>
-				</div>
-				<!--===============================================================================================-->
-				<div class=" m-b-16">
-					<font color="#1C1C1C" id="negrito">Definir metas através de:</font>
-					<span class="focus-input100"></span>
-					<input type="radio" id="r1" name="rr" />
-					<label for="r1"><span></span>Nº de páginas</label>
-					<span class="checkmark"></span>
-					</label>
-					<input type="radio" id="r2" name="rr" />
-					<label for="r2"><span></span>Nº de capítulos</label>
-					<span class="checkmark"></span>
-					</label>
-
-					<input type="radio" id="r4" name="rr" />
-					<label for="r4"><span></span>Marcar como concluído</label>
-					<span class="checkmark"></span>
-					</label>
-				</div>
-
-				<div class=" m-b-16">
-					<font color="#1C1C1C" id="negrito">Dias da semana de estudo:</font>
-					<span class="focus-input100"></span>
-					<input type="checkbox" id="c1" name="cc0" />
-					<label for="c1"><span></span>Segunda-feira</label>
-					<input type="checkbox" id="c2" name="cc1" />
-					<label for="c2"><span></span>Terça-feira</label>
-					<input type="checkbox" id="c3" name="cc2" />
-					<label for="c3"><span></span>Quarta-feira</label>
-					<input type="checkbox" id="c4" name="cc3" />
-					<label for="c4"><span></span>Quinta-feira</label>
-					<input type="checkbox" id="c5" name="cc4" />
-					<label for="c5"><span></span>Sexta-feira</label>
-					<input type="checkbox" id="c6" name="cc5" />
-					<label for="c6"><span></span>Sábado</label>
-					<input type="checkbox" id="c7" name="cc6" />
-					<label for="c7"><span></span>Domingo</label>
-				</div>
-
-				<div class="m-b-16">
-					<font color="#1C1C1C" id="negritoDI"><br>Data de inicio:</font>
-					<input type="date" id="negritoDcss">
-					<br>
-					<font color="#1C1C1C" id="negritoDI">Data de termino:</font>
-					<input type="date" id="negritoDcss23">
-					<div class="m-t-16">
-						<font color="#1C1C1C" id="negritoDI2">Capa do livro:</font>
-					</div>
-
-				</div>
-				<div class="upload-btn-wrapper m-b-20">
-					<button class="btnupc" id="da">Upload capa</button>
-					<input type="file" name="myfile" />
-				</div>
-				<!--===============================================================================================-->
-				<input class="login100-form-btn" type="submit" value="Cadastrar" id="cadastrarlivro">
-      </div>
-		</div>
+	
 
 
 
@@ -194,21 +98,113 @@
 		<a href="#home" class="logo" data-scroll>Cadastrar livro</a>
       <nav class="nav-collapse">
         <ul>
-          <li class="menu-item active"><a href="biblioteca.html" data-scroll>Livros em andamento</a></li>
+          <li class="menu-item"><a href="biblioteca.html" data-scroll>Livros em andamento</a></li>
           <li class="menu-item"><a href="livrosConcluidos.html" data-scroll>Livros concluídos</a></li>
-          <li class="menu-item"><a href="cadastroLivro.html" data-scroll>Cadastrar livros</a></li>
-          <li class="menu-item"><a href="#blog" data-scroll>Ajuda</a></li>
+          <li class="menu-item active"><a href="cadastroLivro.html" data-scroll>Cadastrar livros</a></li>
+          <li class="menu-item"><a href="ajuda.html" data-scroll>Ajuda</a></li>
           <li class="menu-item"><a href="http://www.google.com" target="_blank">Sobre nós</a></li>
           <li class="menu-item"><a href="index.html" data-scroll>Deslogar</a></li>
         </ul>
       </nav>
 	</header>
+  
 
 
 
+	<div class="limiter p-t-51">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="wrap-input100 validate-input m-b-16" data-validate="Necessário titulo do livro">
+					<input class="input100" type="text" name="titulo" placeholder="Titulo" maxlength="40" id="nomeLivro">
+					<span class="focus-input100"></span>
+				</div>
 
+				<div class="wrap-input100 validate-input m-b-16" data-validate="Necessário informar numero de paginas">
+					<input class="input100" type="number" name="paginas" placeholder="Páginas" onKeyPress="if(this.value.length==9) return false;"
+					 min="0" id="paginasLivro">
+					<span class="focus-input100"></span>
+				</div>
 
-	<!-- EXEMPLO -->
+				<div class="wrap-input100 m-b-16">
+					<input class="input100" type="text" name="autor" placeholder="Autor" maxlength="40" id="autorLivro">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 m-b-16">
+					<input class="input100" type="number" name="edicao" placeholder="Edição" onKeyPress="if(this.value.length==4) return false;"
+					 min="0" id="edicaoLivro">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 m-b-16">
+					<input class="input100" type="number" name="anoEdicao" placeholder="Ano de Edição" onKeyPress="if(this.value.length==4) return false;"
+					 min="0" id="anoEdicaoLivro">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 m-b-16">
+					<input class="input100" type="text" name="editor" placeholder="Editora" maxlength="40" id="editorLivro">
+					<span class="focus-input100"></span>
+				</div>
+				<!--===============================================================================================-->
+				<div class=" m-b-16">
+					<font color="#1C1C1C" id="negrito">Definir metas através de:</font>
+					<span class="focus-input100"></span>
+					<input type="radio" id="r1" name="modo" />
+					<label for="r1"><span></span>Nº de páginas</label>
+					<span class="checkmark"></span>
+					</label>
+					<input type="radio" id="r2" name="modo" />
+					<label for="r2"><span></span>Nº de capítulos</label>
+					<span class="checkmark"></span>
+					</label>
+
+					<input type="radio" id="r3" name="modo" />
+					<label for="r3"><span></span>Marcar como concluído</label>
+					<span class="checkmark"></span>
+					</label>
+				</div>
+
+				<div class=" m-b-16">
+					<font color="#1C1C1C" id="negrito">Dias da semana de estudo:</font>
+					<span class="focus-input100"></span>
+					<input type="checkbox" id="c1" name="cc" />
+					<label for="c1"><span></span>Segunda-feira</label>
+					<input type="checkbox" id="c2" name="cc"  />
+					<label for="c2"><span></span>Terça-feira</label>
+					<input type="checkbox" id="c3" name="cc"  />
+					<label for="c3"><span></span>Quarta-feira</label>
+					<input type="checkbox" id="c4" name="cc" />
+					<label for="c4"><span></span>Quinta-feira</label>
+					<input type="checkbox" id="c5" name="cc"  />
+					<label for="c5"><span></span>Sexta-feira</label>
+					<input type="checkbox" id="c6" name="cc"  />
+					<label for="c6"><span></span>Sábado</label>
+					<input type="checkbox" id="c7" name="cc"  />
+					<label for="c7"><span></span>Domingo</label>
+				</div>
+<meta charset="UTF-8">
+				<div class="m-b-16">
+					<font color="#1C1C1C" id="negritoDI"><br>Data de inicio:</font>
+					<input type="date" id="negritoDcss"   >
+        
+					<br>
+					<font color="#1C1C1C" id="negritoDI">Data de termino:</font>
+					<input type="date" id="negritoDcss23"  >
+
+					<div class="m-t-16">
+						<font color="#1C1C1C" id="negritoDI2">Capa do livro:</font>
+					</div>
+
+				</div>
+				<div class="upload-btn-wrapper m-b-20">
+					<button class="btnupc" id="da">Upload capa</button>
+					<input type="file" name="myfile" />
+				</div>
+				<!--===============================================================================================-->
+				<input class="login100-form-btn" type="submit" value="Cadastrar" id="cadastrarlivro">
+      </div>
+		</div>
 
 
 
@@ -235,16 +231,7 @@
 	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
-	<!--<a class="button--large" href="phonegap-demo.html">Start Demo</a>-->
-
 </body>
-<footer>
-	<!-- informações complementares, que são apresentados na parte inferior da tela-->
-
-
-
-
-</footer>
 
 
 </html>

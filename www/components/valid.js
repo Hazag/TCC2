@@ -1,0 +1,26 @@
+
+function validacaoEmail(field) {
+usuario = field.value.substring(0, field.value.indexOf("@"));
+dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
+if ((usuario.length >=1) &&
+    (dominio.length >=3) && 
+    (usuario.search("@")==-1) && 
+    (dominio.search("@")==-1) &&
+    (usuario.search(" ")==-1) && 
+    (dominio.search(" ")==-1) &&
+    (dominio.search(".")!=-1) &&      
+    (dominio.indexOf(".") >=1)&& 
+    (dominio.lastIndexOf(".") < dominio.length - 1)) {
+emailCadastro.style.backgroundColor = "rgba(0,255,0,0.3)";
+$('#login01').removeAttr('disabled');
+}
+else{
+alert("E-mail invalido");
+emailCadastro.style.backgroundColor = "rgba(255,0,0,0.3)";
+$('#login01').attr('disabled', 'disabled');
+}
+}
+
+
+
+

@@ -8,16 +8,12 @@
 	<script src="components/loader.js"></script>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/responsive-nav.js"></script>
+  <script src="components/menu.js"></script>
 	<link rel="stylesheet" href="components/loader.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script>
-	
-	</script>
+  <script src="components/progresso.js"></script>
 
 
-	<span class="login100-form-title p-b-51">
-					
-					</span>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,6 +44,7 @@
 </head>
 
 <body id="telaPagina">
+  	<span class="login100-form-title p-b-51"></span>
   <header>
       <a href="#home" class="logo" data-scroll>Atualizar progresso do livro</a>
       <nav class="nav-collapse">
@@ -55,7 +52,7 @@
           <li class="menu-item active"><a href="biblioteca.html" data-scroll>Livros em andamento</a></li>
           <li class="menu-item"><a href="livrosConcluidos.html" data-scroll>Livros concluídos</a></li>
           <li class="menu-item"><a href="cadastroLivro.html" data-scroll>Cadastrar livros</a></li>
-          <li class="menu-item"><a href="#blog" data-scroll>Ajuda</a></li>
+          <li class="menu-item"><a href="ajuda.html" data-scroll>Ajuda</a></li>
           <li class="menu-item"><a href="http://www.google.com" target="_blank">Sobre nós</a></li>
           <li class="menu-item"><a href="index.html" data-scroll>Deslogar</a></li>
         </ul>
@@ -63,12 +60,7 @@
     </header>
 
     <section >
-      
-
-			<span class="focus-input100"></span>
-		</div>
-    
-	</form>
+     
 	<table>
 		<tr>
 			
@@ -77,33 +69,21 @@
         <a href="notasLivro.html"><button class="login103-form-btn">Notas</button></a>
 		</tr>
     <tr>
-				<font color="#6495ED" id="tl"><b>Título:</b><br> A espada do destino<br><b>Páginas:</b><br> 380<br><b>Páginas lidas:</b><br> 114<br> <b>Progresso:</b></font>
+				<font color="#6495ED" id="tl"><b>Título:</b><br> A espada do destino<br><b>Páginas:</b><br class="ptotal"> 380<br><b>Páginas lidas:</b><br> 114<br> <b>Progresso:</b></font>
     
-<!-- Maneira com CSS e HTML -->
-<div class="progress2">
-    <div class="statuss m-b-16" style="width: 30%">30%</status>
-    
-  </div>
-  <form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
-		<div class="wrap-input100 validate-input m-b-20" data-validate="Necessário nome de usuario">
-			<input class="input103" type="number" name="" placeholder="Pagina atual" onKeyPress="if(this.value.length==9) return false;" id="nome" id="nome">
-			<input class="login101-form-btn" type="submit" value="Atualizar" >
-
-			<span class="focus-input100"></span>
-		</div>
-    
-	</form>
+      <!-- Maneira com CSS e HTML -->
+        <div class="progress2">
+          <div class="statuss m-b-16">#%</status>
+        </div>
+        <form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
+          <div class="wrap-input100 validate-input m-b-20" data-validate="Necessário nome de usuario">
+            <input class="input103" type="number" name="" placeholder="Pagina atual" onKeyPress="if(this.value.length==9) return false;" id="nome">
+            <input class="login101-form-btn" type="submit" value="Atualizar" class="atualizar">
+          </div>
+	      </form>
   
   </tr>
-  <table >
- 
- 
-      
-   
-
-    
-    
-
+  </table >
 
     <script src="js/fastclick.js"></script>
     <script src="js/scroll.js"></script>
@@ -127,16 +107,6 @@
 	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
-	<!--<a class="button--large" href="phonegap-demo.html">Start Demo</a>-->
-
 </body>
-<footer>
-	<!-- informações complementares, que são apresentados na parte inferior da tela-->
-
-
-
-
-</footer>
-
 
 </html>

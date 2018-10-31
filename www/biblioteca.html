@@ -1,205 +1,128 @@
 <!DOCTYPE HTML>
 <html>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-	<script src="components/loader.js"></script>
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/responsive-nav.js"></script>
-  <script src="components/menu.js"></script>
-	<link rel="stylesheet" href="components/loader.css">
-	<link rel="stylesheet" href="css/style.css">
-<!--===============================================================================================-->
-<script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/responsive-nav.js"></script>
+    <script src="components/menu.js"></script>
+    <script src="components/ready.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+  <!--===============================================================================================-->
 
-</script>
-<!--===============================================================================================-->  
-	<script>
-		// PhoneGap event handler
-        document.addEventListener("deviceready", onDeviceReady, false);
-        function onDeviceReady() {
-            console.log("PhoneGap is ready");
-        }
-	</script>
-  <span class="login100-form-title p-b-51">
-						
-					</span>
+  <!--===============================================================================================-->  
+    <script>
+      // PhoneGap event handler
+          document.addEventListener("deviceready", onDeviceReady, false);
+          function onDeviceReady() {
+              console.log("PhoneGap is ready");
+              
+          }
 
+          $(function(){
+            sessionStorage.getItem("usuario");
+          });
+          
+    </script>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
 
-	<!--===============================================================================================-->
+  </head>
 
-</head>
+  <body id="telaPagina">
+    <header>
+      <a href="#home" class="logo" data-scroll>Livros em andamento</a>
+        <nav class="nav-collapse">
+          <ul>
+            <li class="menu-item active"><a href="biblioteca.html" data-scroll>Livros em andamento</a></li>
+            <li class="menu-item"><a href="livrosConcluidos.html" data-scroll>Livros concluídos</a></li>
+            <li class="menu-item"><a href="cadastroLivro.html" data-scroll>Cadastrar livros</a></li>
+            <li class="menu-item"><a href="ajuda.html" data-scroll>Ajuda</a></li>
+            <li class="menu-item"><a href="http://www.google.com" target="_blank">Sobre nós</a></li>
+            <li class="menu-item"><a href="index.html" data-scroll>Deslogar</a></li>
+          </ul>
+        </nav>
+      </header>
 
-<body id="telaPagina">
-  <header>
- <a href="#home" class="logo" data-scroll>Livros em andamento</a>
-      <nav class="nav-collapse">
-        <ul>
-          <li class="menu-item active"><a href="biblioteca.html" data-scroll>Livros em andamento</a></li>
-          <li class="menu-item"><a href="livrosConcluidos.html" data-scroll>Livros concluídos</a></li>
-          <li class="menu-item"><a href="cadastroLivro.html" data-scroll>Cadastrar livros</a></li>
-          <li class="menu-item"><a href="#blog" data-scroll>Ajuda</a></li>
-          <li class="menu-item"><a href="http://www.google.com" target="_blank">Sobre nós</a></li>
-          <li class="menu-item"><a href="index.html" data-scroll>Deslogar</a></li>
-        </ul>
-      </nav>
-    </header>
+      <section id="home">
+        
+          <div class="wrap-input100 validate-input m-t-60 m-b-20" data-validate="Necessário nome de usuario">
+            <input class="input102" type="text" name="" placeholder="Autor, Titulo... " id="nome">
+            <input class="login101-form-btn" type="submit" value="Filtrar" onclick="Verificador">
+          </div>
+        
+        <a href="cadastroLivro.html"><button class="login100-form-btn">Cadastrar Livro</button></a>
+        
+        <table id="lar100">
+          <!--Colocar dentro de uma funcao javascript-->
+          <tr>
+            <td>
+              <a href="infoLivro.html"><img src="images/espadaDestino.jpg" style="width:100px;height:150px"></a>
+              <a href="notasLivro.html"><button class="login102-form-btn">Notas</button></a>
+            </td>
+            <td style="width:100%">
+              <font color="#6495ED" id="tl"><b>Título:</b><br> A espada do destino<br><b>Meta:</b> 22 p/dia<br><b>Progresso:</b></font>
+              <a href="atualizarProgresso.html"><button class="login102-form-btn">Atualizar</button></a>
+              <div class="progress">
+                <div class="status" id="se2" style="width: 30%">30%</div> 
+              </div>
+            </td>
+          </tr>
+        <!-------------------------------------------------------------------------------------------------------->
+        
+        </table>
 
-    <section id="home">
-      <form action="cadastro.php" method="POST" class="login100-form validate-form flex-sb flex-w">
-		<div class="wrap-input100 validate-input m-b-20" data-validate="Necessário nome de usuario">
-			<input class="input102" type="text" name="" placeholder="Autor, Titulo... " id="nome">
-			<input class="login101-form-btn" type="submit" value="Filtrar" onclick="Verificador">
-
-			<span class="focus-input100"></span>
-		</div>
+      <script src="js/fastclick.js"></script>
+      <script src="js/scroll.js"></script>
+      <script src="js/fixed-responsive-nav.js"></script>
     
-	</form>
-  <a href="cadastroLivro.html"><button class="login100-form-btn">Cadastrar Livro</button></a>
-	<table id="lar100">
-		<tr>
-			<td>
-				<!--ADICIONAR-->
-				<a href="infoLivro.html"><img  src="images/espadaDestino.jpg" style="width:100px;height:150px"></a>
-        <a href="notasLivro.html"><button class="login102-form-btn">Notas</button></a>
-			</td>
-			<td style="width:100%">
 
-				<font color="#6495ED" id="tl"><b>Título:</b><br> A espada do destino<br><b>Meta:</b> 22 p/dia<br><b>Progresso:</b></font>
-      
-
-<a href="atualizarProgresso.html"><button class="login102-form-btn">Atualizar</button></a>
-<!-- botao teste -->
-
-<!-- botao teste -->
-<!-- Maneira com CSS e HTML -->
-
-<div class="progress">
-    <div class="status" style="width: 30%">30%</status>
-    
-  </div>
-  </td>
-  
-  
-
-		</tr>
-
-	</table>
-  <!-- EXEMPLO -->
-  <table id="lar100">
-		<tr>
-			<td>
-				<!--ADICIONAR-->
-				<a href="infoLivro.html"><img src="images/nomedovento.jpg" style="width:100px;height:150px"></a>
-        <a href="notasLivro.html"><button class="login102-form-btn">Notas</button></a>
-			</td>
-			<td style="width:100%">
-
-				<font color="#6495ED" id="tl"><b>Título:</b><br> O nome do vento<br><b>Meta:</b> 19 p/dia<br><b>Progresso:</b></font>
-			<a href="atualizarProgresso.html"><button class="login102-form-btn">Atualizar</button></a>
-
-      
-
-<!-- Maneira com CSS e HTML -->
-
-<div class="progress">
-    <div class="status" style="width: 60%">60%</status>
-    
-  </div>
-  </td>
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
 
 
-		</tr>
-
-	</table>
-
-
-  <table id="lar100">
-		<tr>
-			<td>
-				<!--ADICIONAR-->
-				<a href="infoLivro.html"><img src="images/hpcs.jpg" style="width:100px"></a>
-        <a href="notasLivro.html"><button class="login102-form-btn">Notas</button></a>
-			</td>
-			<td style="width:100%">
-
-				<font color="#6495ED" id="tl"><b>Título:</b><br> Harry Potter e a câmara secreta<br><b>Meta:</b> 13 p/dia<br><b>Progresso:</b></font>
-			<a href="atualizarProgresso.html"><button class="login102-form-btn">Atualizar</button></a>
-
-<!-- Maneira com CSS e HTML -->
-
-<div class="progress">
-    <div class="status" style="width: 94%">94%</status>
-  </div></td>
-
-
-		</tr>
-
-	</table>
-  <!-- EXEMPLO -->
-      
-    </section>
-
-
-    <script src="js/fastclick.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/fixed-responsive-nav.js"></script>
-	
-
-	<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-	<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-
-	<!--<a class="button--large" href="phonegap-demo.html">Start Demo</a>-->
-
-</body>
-<footer>
-	<!-- informações complementares, que são apresentados na parte inferior da tela-->
-
-
-
-
-</footer>
-
+  </body>
 
 </html>
